@@ -26,8 +26,7 @@ public class EmployeeRestController {
 
 	@GetMapping("/api/employees")
 	public List<Employee> getEmployees() {
-		List<Employee> employees = employeeService.retrieveEmployees();
-		return employees;
+		return employeeService.retrieveEmployees();
 	}
 
 	@GetMapping("/api/employees/{employeeId}")

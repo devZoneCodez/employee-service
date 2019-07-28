@@ -16,12 +16,13 @@ public class Employee {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "ID")
 	private Long id;
 
-	@Column(name = "EMPLOYEE_NAME")
+	@Column(name = "NAME")
 	private String name;
 
-	@Column(name = "EMPLOYEE_SALARY")
+	@Column(name = "SALARY")
 	private Integer salary;
 
 	@Column(name = "DEPARTMENT")
