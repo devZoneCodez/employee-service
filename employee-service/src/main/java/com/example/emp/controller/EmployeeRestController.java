@@ -46,7 +46,7 @@ public class EmployeeRestController {
 	}
 
 	@PostMapping("/api/employees")
-	public void saveEmployee(Employee employee) {
+	public void saveEmployee(@RequestBody Employee employee) {
 		log.trace("saveEmployee(Employee) - start");
 
 		employeeService.saveEmployee(employee);
